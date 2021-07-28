@@ -1,0 +1,32 @@
+name : dealership_volkswagen
+
+
+Column                      Type                    Attributes                          Index        
+
+Id                          BIGINT UNSIGNED         AUTO_INCREMENT, NOT NULL            PRIMARY KEY
+license_plate               VARCHAR(8)              NOT NULL,UNIQUE                
+previous_number_owners      TINYINT UNSIGNED        NOT NULL
+model                       VARCHAR(255)            NOT NULL                            INDEX
+name                        VARCHAR(255)            NOT NULL                            INDEX
+version                     VARCHAR(255)            NOT NULL                            INDEX
+description                 TEXT                    NULL
+release_year                YEAR                    NULL                                INDEX
+kilometers                  MEDIUMINT UNSIGNED      NOT NULL
+general_status              VARCHAR(50)             NOT NULL                            INDEX      
+price                       MEDIUMINT UNSIGNED      NOT NULL                            INDEX
+color                       VARCHAR(50)             NOT NULL
+interior                    TEXT                    NULL
+power_source                VARCHAR(255)            NOT NULL                            INDEX
+transmission                VARCHAR(255)            NOT NULL
+wheels                      VARCHAR(255)            NULL
+lights                      VARCHAR(255)            NULL
+air conditioning            VARCHAR(255)            NULL
+connection                  TEXT                    NULL
+comfort                     TEXT                    NULL
+protection_system           TEXT                    NULL
+accessories                 TEXT                    NULL
+services                    TEXT                    NULL
+
+
+
+/* gli spazi sono considerati nel conteggio di un VARCHAR pe esempio? */
